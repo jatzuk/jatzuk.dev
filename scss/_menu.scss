@@ -1,3 +1,4 @@
+$portrait-resource: url('../img/portrait.jpg');
 $menu-overlay-opacity: 0.9;
 
 // menu  button
@@ -89,7 +90,7 @@ $menu-overlay-opacity: 0.9;
         .portrait {
             width: 250px;
             height: 250px;
-            background: url('../img/portrait.jpg');
+            background: $portrait-resource;
             border-radius: 50%;
             border: solid 3px $secondary-color;
         }
