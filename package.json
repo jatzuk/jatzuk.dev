@@ -1,0 +1,22 @@
+{
+  "name": "jatzuk.github.io",
+  "version": "1.0.0",
+  "description": "Jatzuk Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jatzuk/jatzuk.github.io.git"
+  },
+  "author": "Dilantha Jayathiratne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jatzuk/jatzuk.github.io/issues"
+  },
+  "homepage": "https://jatzuk.github.io/jatzuk.github.io",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
