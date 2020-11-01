@@ -1,5 +1,6 @@
-$portrait-resource: url('../img/portrait.jpg');
-$menu-overlay-opacity: 0.9;
+$portrait-path: '../img/portrait-menu.png';
+$menu-overlay-opacity: 0.95;
+$darken-factor: 25;
 
 // menu  button
 .menu-btn {
@@ -44,7 +45,7 @@ $menu-overlay-opacity: 0.9;
 // menu overlay
 .menu {
     position: fixed;
-    top: 0;
+    top: 0%;
     width: 100%;
     opacity: $menu-overlay-opacity;
     visibility: hidden;
@@ -67,7 +68,7 @@ $menu-overlay-opacity: 0.9;
     &-nav {
         margin: 0;
         padding: 0;
-        background: darken($primary-color, 5);
+        background: darken($primary-color, $darken-factor);
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
@@ -79,7 +80,7 @@ $menu-overlay-opacity: 0.9;
 
     //branding side
     &-branding {
-        background: $primary-color;
+        background: darken($primary-color, $darken-factor);
         transform: translate3d(0, 100%, 0);
         @include easeOut;
 
@@ -90,9 +91,10 @@ $menu-overlay-opacity: 0.9;
         .portrait {
             width: 250px;
             height: 250px;
-            background: $portrait-resource;
+            background: url($portrait-path);
             border-radius: 50%;
             border: solid 3px $secondary-color;
+            background-repeat: no-repeat;
         }
     }
 
